@@ -140,3 +140,86 @@
     </script>
 </body>
 </html>
+
+
+/* Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #faf9f9;
+    padding-top: 56px; /* Offset for fixed navbar */
+}
+
+/* Variables */
+:root {
+    --primary-color: #eedd49; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --dark-color: #080808;
+    --light-color: #363636;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('image/pexels-eberhardgross-691668.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+}
+
+/* Custom Button */
+.btn-brand {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    background-color: #303131;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Project Cards */
+.project-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.project-card .card-footer {
+    background-color: #fff;
+    border-top: none;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: var(--primary-color);
+}
